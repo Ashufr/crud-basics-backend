@@ -9,9 +9,7 @@ const productRouter = require("./routes/user");
 
 const app = express();
 
-app.use(cors({
-    origin: 'https://crud-basics-frontend.vercel.app/'
-}));
+app.use(cors());
 app.use(express.json());
 app.use(productRouter)
 
